@@ -19,11 +19,11 @@ body, html {
 .galleria-stage {
     position: absolute;
     top: 0/*10px*/;
-    bottom: 178px;
+    bottom: 168px;
     left: 10px;
     right: 10px;
     /*overflow:hidden;*/
-    padding-top:24px;
+    padding-top:26px;
 }
 .galleria-thumbnails-container {
     height: 142px;
