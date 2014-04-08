@@ -98,27 +98,30 @@ nav {
 	background: $brown-dark;
 	height: 20px;
 	line-height: 20px;
+	.tab {
+		height: 20px;
+		line-height: 20px;
+		display: block;
+	}
 	ul {
 		float: right;
+		list-style: none;
+		margin-right: 63px;
 		li {
-			display: block;
 			float: left;
-			height: 20px;
-			line-height: 20px;
 			color: $brown-dark;
 		}
 		li.active {
-			background: $brown-dark;
-			padding: 0 10px;
+			background: $yellow-text;
+			padding: 0 12px;
+			@extend .tab;
 		}
 	}
 	a {
 		color: $beige-text;
-		height: 20px;
-		line-height: 20px;
-		display: block;
-		padding: 0 10px;
+		padding: 0 12px;
 		-moz-transition: background 0.2s ease 0s;
+		@extend .tab;
 	}
 	a:hover {
 		color: $brown-dark;
@@ -136,22 +139,30 @@ nav {
 
 #wrapper {
     background: url(../web-images/bgd1.jpg) repeat 0 0 $beige-bg;
-	/*padding-bottom: 600px !important;*/
 	position: relative;
 	min-height: 100% !important;
 	@include box-shadow(1px 1px 150px $shadow inset);
 }
-/*#wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}*/
-
 
 #content {
 	margin:0;
-	padding:55px 0 0 0;
-	/*min-height:350px;*/
+	padding:55px 30px 40px 30px;
+}
+
+/* Gallery list view */
+#content.list_view {
+	padding-right: 38px;
+}
+#list_view {
+	overflow: visible;
+}
+.justified-gallery a {
+	@include border-radius(30px);
+	border: 4px solid #DFE0D3;
+	@include box-shadow(1px 1px 5px #656565);
+	img {
+		@include border-radius(26px);
+	}
 }
 
 

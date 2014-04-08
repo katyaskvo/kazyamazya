@@ -7,8 +7,28 @@
 	<link rel="stylesheet" href="../css-from-sass/main.css" type="text/css" charset="utf-8">
 	
     <!-- load jQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <script src="../js/smooth_scroll.js"></script>
+    
+    <!-- Justified gallery -->
+	<script src='../libs/jquery/jquery.min.js'></script>
+	<link rel='stylesheet' href='../dist/css/justifiedgallery.css' type='text/css' media='all' />
+	<script src='../dist/js/jquery.justifiedgallery.js'></script>
+	<script>
+		$(document).ready(function () {
+	
+			$('#list_view').justifiedGallery({
+				rowHeight: 140,
+				maxRowHeight: 0,
+				margins: 25,
+				lastRow: 'justify',
+				fixedHeight: false,
+				captions: false,
+				randomize: false
+			});
+	
+		});
+	</script>
 
     </head>
     <body>
@@ -27,8 +47,71 @@
 				    </nav>
             	</header>
             	
-                <div id="content">
-					        
+                <div id="content" class="list_view">
+                	<div id="list_view" >
+						<a href="img/001_galgrikh.jpg" title="Galgrikh">
+							<img alt="Galgrikh" src="img/001_galgrikh.jpg" />
+						</a>
+						<a href="img/160/002_skombriki.jpg" title="">
+							<img alt="" src="img/002_skombriki.jpg" />
+						</a>
+						<a href="img/003_iskat.jpg" title="">
+							<img alt="" src="img/003_iskat.jpg" />
+						</a>
+						<a href="img/004_pointless_end_of_cuke.jpg" title="Galgrikh">
+							<img alt="Galgrikh" src="img/004_pointless_end_of_cuke.jpg" />
+						</a>
+						<a href="img/005_prishlo.jpg" title="">
+							<img alt="" src="img/005_prishlo.jpg" />
+						</a>
+						<a href="img/006_zayadairy.jpg" title="Galgrikh">
+							<img alt="Galgrikh" src="img/006_zayadairy.jpg" />
+						</a>
+						<a href="img/007_fezikson.jpg" title="">
+							<img alt="" src="img/007_fezikson.jpg" />
+						</a>
+						<a href="img/008_what_is_right_ah.jpg" title="Galgrikh">
+							<img alt="Galgrikh" src="img/008_what_is_right_ah.jpg" />
+						</a>
+						<a href="img/009_broken_tripod.jpg" title="">
+							<img alt="" src="img/009_broken_tripod.jpg" />
+						</a>
+						<a href="img/010_letyat.jpg" title="Galgrikh">
+							<img alt="Galgrikh" src="img/010_letyat.jpg" />
+						</a>
+						<a href="img/001_galgrikh.jpg" title="Galgrikh">
+							<img alt="Galgrikh" src="img/001_galgrikh.jpg" />
+						</a>
+						<a href="img/160/002_skombriki.jpg" title="">
+							<img alt="" src="img/002_skombriki.jpg" />
+						</a>
+						<a href="img/003_iskat.jpg" title="">
+							<img alt="" src="img/003_iskat.jpg" />
+						</a>
+						<a href="img/004_pointless_end_of_cuke.jpg" title="Galgrikh">
+							<img alt="Galgrikh" src="img/004_pointless_end_of_cuke.jpg" />
+						</a>
+						<a href="img/005_prishlo.jpg" title="">
+							<img alt="" src="img/005_prishlo.jpg" />
+						</a>
+						<a href="img/006_zayadairy.jpg" title="Galgrikh">
+							<img alt="Galgrikh" src="img/006_zayadairy.jpg" />
+						</a>
+						<a href="img/007_fezikson.jpg" title="">
+							<img alt="" src="img/007_fezikson.jpg" />
+						</a>
+						<a href="img/008_what_is_right_ah.jpg" title="Galgrikh">
+							<img alt="Galgrikh" src="img/008_what_is_right_ah.jpg" />
+						</a>
+						<a href="img/009_broken_tripod.jpg" title="">
+							<img alt="" src="img/009_broken_tripod.jpg" />
+						</a>
+						<a href="img/010_letyat.jpg" title="Galgrikh">
+							<img alt="Galgrikh" src="img/010_letyat.jpg" />
+						</a>						
+						
+                	</div>
+					      
                 </div>
                 
         
@@ -72,7 +155,7 @@
 		</div>
 
 
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
 		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 		</script>
@@ -81,6 +164,6 @@
 		var pageTracker = _gat._getTracker("UA-6614390-2");
 		pageTracker._trackPageview();
 		} catch(err) {}
-	</script>
+	</script>-->
 </body>
 </html>
