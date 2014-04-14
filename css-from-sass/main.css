@@ -1,15 +1,15 @@
-/* line 29, ../sass/main.scss */
+/* line 43, ../sass/main.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 33, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 html {
   height: 100%;
 }
 
-/* line 36, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 body {
   background-color: #323232;
   font: 12px/16px "QuicksandBook", sans-serif;
@@ -18,36 +18,39 @@ body {
   height: 100%;
 }
 
-/* line 43, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 a {
   outline: none;
   color: #057565;
   text-decoration: none;
-  -moz-transition: color 0.1s ease 0s;
-  -moz-transition: border-bottom 0.1s ease 0.01s;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-/* line 50, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 a:hover {
   color: #efb600;
   border-bottom: 1px dashed #efb600;
 }
 
-/* line 54, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 p::selection, a::selection, li::selection, h5::selection {
   background: #efb600;
   /* Safari */
   color: #323232;
 }
 
-/* line 58, ../sass/main.scss */
+/* line 71, ../sass/main.scss */
 p::-moz-selection, a::-moz-selection, li::-moz-selection, h5::-moz-selection {
   background: #efb600;
   /* Firefox */
   color: #323232;
 }
 
-/* line 65, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 header h1 {
   text-indent: -99999px;
   background: url(../web-images/logo3.png) 6px 6px #323232 no-repeat;
@@ -65,7 +68,7 @@ header h1 {
   z-index: 100000;
   float: left;
 }
-/* line 79, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 header #logo {
   width: 116px;
   height: 73px;
@@ -74,12 +77,12 @@ header #logo {
   top: 0;
   left: 50px;
 }
-/* line 87, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 header #logo img {
   border: 0 none;
 }
 
-/* line 93, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 nav {
   display: block;
   width: 100%;
@@ -89,51 +92,51 @@ nav {
   height: 20px;
   line-height: 20px;
 }
-/* line 101, ../sass/main.scss */
+/* line 114, ../sass/main.scss */
 nav .tab, nav ul li.active, nav a {
   height: 20px;
   line-height: 20px;
   display: block;
 }
-/* line 106, ../sass/main.scss */
+/* line 119, ../sass/main.scss */
 nav ul {
   float: right;
   list-style: none;
   margin-right: 63px;
 }
-/* line 110, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
 nav ul li {
   float: left;
   color: #323232;
 }
-/* line 114, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 nav ul li.active {
   background: #efb600;
   padding: 0 12px;
 }
-/* line 120, ../sass/main.scss */
+/* line 133, ../sass/main.scss */
 nav a {
   color: #a4a4a0;
   padding: 0 12px;
   -moz-transition: background 0.2s ease 0s;
 }
-/* line 126, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 nav a:hover {
   color: #323232;
   background: #a4a4a0;
 }
-/* line 130, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 nav a:active {
   color: #323232;
   background: #efb600;
 }
-/* line 134, ../sass/main.scss */
+/* line 147, ../sass/main.scss */
 nav a, nav a:hover, nav a:active {
   text-decoration: none;
   border-bottom: none;
 }
 
-/* line 140, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 #wrapper {
   background: url(../web-images/bgd1.jpg) repeat 0 0 #cbcbc6;
   position: relative;
@@ -143,24 +146,24 @@ nav a, nav a:hover, nav a:active {
   box-shadow: 1px 1px 150px #222222 inset;
 }
 
-/* line 147, ../sass/main.scss */
+/* line 160, ../sass/main.scss */
 #content {
   margin: 0;
   padding: 55px 30px 40px 30px;
 }
 
 /* Gallery list view */
-/* line 153, ../sass/main.scss */
+/* line 166, ../sass/main.scss */
 #content.list_view {
   padding-right: 38px;
 }
 
-/* line 156, ../sass/main.scss */
+/* line 169, ../sass/main.scss */
 #list_view {
   overflow: visible;
 }
 
-/* line 159, ../sass/main.scss */
+/* line 172, ../sass/main.scss */
 .justified-gallery a {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -170,17 +173,44 @@ nav a, nav a:hover, nav a:active {
   -webkit-box-shadow: 1px 1px 5px #656565;
   -moz-box-shadow: 1px 1px 5px #656565;
   box-shadow: 1px 1px 5px #656565;
+  /*background-color: $green;*/
 }
-/* line 163, ../sass/main.scss */
+/* line 177, ../sass/main.scss */
 .justified-gallery a img {
   -webkit-border-radius: 26px;
   -moz-border-radius: 26px;
   -ms-border-radius: 26px;
   border-radius: 26px;
+  -webkit-transition: filter 0.2s ease;
+  -moz-transition: filter 0.2s ease;
+  -ms-transition: filter 0.2s ease;
+  -o-transition: filter 0.2s ease;
+  transition: filter 0.2s ease;
+}
+
+/* line 182, ../sass/main.scss */
+.justified-gallery a:hover {
+  border-color: #057565;
+  text-decoration: none;
+}
+/* line 185, ../sass/main.scss */
+.justified-gallery a:hover img {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+  filter: url(filter.svg#blur);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
+}
+/* line 194, ../sass/main.scss */
+.justified-gallery a:hover .caption {
+  display: block;
+  opacity: 0.6 !important;
 }
 
 /* footer */
-/* line 170, ../sass/main.scss */
+/* line 203, ../sass/main.scss */
 footer {
   position: absolute !important;
   bottom: -430px;
@@ -188,7 +218,7 @@ footer {
   background: #323232;
   height: 440px;
 }
-/* line 177, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 footer .show_footer {
   position: absolute;
   top: -20px;
@@ -203,11 +233,11 @@ footer .show_footer {
   border-radius: 10px 10px 0 0;
   background: url(../web-images/footer-arrow.png) center center no-repeat #323232;
 }
-/* line 188, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 footer .show_footer:hover {
   border-bottom: none;
 }
-/* line 191, ../sass/main.scss */
+/* line 224, ../sass/main.scss */
 footer .content {
   position: relative;
   width: 80%;
@@ -217,7 +247,7 @@ footer .content {
   padding: 80px 0 0 0;
   color: #95968a;
 }
-/* line 200, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 footer .content .story {
   font-size: 1.2em;
   line-height: 1.8em;
@@ -226,39 +256,39 @@ footer .content .story {
   padding: 0 5%;
 }
 @media (max-width: 840px) {
-  /* line 200, ../sass/main.scss */
+  /* line 233, ../sass/main.scss */
   footer .content .story {
     width: 100%;
     padding: 30px 0;
     float: none;
   }
 }
-/* line 212, ../sass/main.scss */
+/* line 245, ../sass/main.scss */
 footer .content .logo {
   float: left;
   position: relative;
   width: 22%;
 }
 @media (max-width: 840px) {
-  /* line 212, ../sass/main.scss */
+  /* line 245, ../sass/main.scss */
   footer .content .logo {
     width: 50%;
     float: none;
   }
 }
-/* line 221, ../sass/main.scss */
+/* line 254, ../sass/main.scss */
 footer .content .logo img {
   width: 100%;
   max-width: 231px;
 }
-/* line 226, ../sass/main.scss */
+/* line 259, ../sass/main.scss */
 footer .content .links {
   float: right;
   width: 22%;
   font: 12px/16px "QuicksandBook", sans-serif;
 }
 @media (max-width: 840px) {
-  /* line 226, ../sass/main.scss */
+  /* line 259, ../sass/main.scss */
   footer .content .links {
     width: 100%;
     padding: 30px 0;
@@ -267,26 +297,26 @@ footer .content .links {
     line-height: 1.6em;
   }
 }
-/* line 237, ../sass/main.scss */
+/* line 270, ../sass/main.scss */
 footer .content .links h5 {
   font-size: 1.4em;
   letter-spacing: 0;
 }
 @media (max-width: 840px) {
-  /* line 237, ../sass/main.scss */
+  /* line 270, ../sass/main.scss */
   footer .content .links h5 {
     font-size: 1.2em;
     border-bottom: 2px dotted;
     margin-bottom: 20px;
   }
 }
-/* line 246, ../sass/main.scss */
+/* line 279, ../sass/main.scss */
 footer .content .links ul {
   list-style: none;
   padding-bottom: 6px;
 }
 @media (max-width: 840px) {
-  /* line 246, ../sass/main.scss */
+  /* line 279, ../sass/main.scss */
   footer .content .links ul {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -294,18 +324,18 @@ footer .content .links ul {
     margin-bottom: 30px;
   }
 }
-/* line 253, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 footer .content .links ul li {
   padding-bottom: 6px;
 }
 @media (max-width: 840px) {
-  /* line 253, ../sass/main.scss */
+  /* line 286, ../sass/main.scss */
   footer .content .links ul li {
     padding-bottom: 10px;
     display: table;
   }
 }
-/* line 264, ../sass/main.scss */
+/* line 297, ../sass/main.scss */
 footer .copyright {
   padding-top: 60px;
   padding-bottom: 3px;
@@ -316,27 +346,27 @@ footer .copyright {
   margin-left: 27%;
 }
 @media (max-width: 840px) {
-  /* line 264, ../sass/main.scss */
+  /* line 297, ../sass/main.scss */
   footer .copyright {
     margin-left: 0;
     text-align: center;
   }
 }
-/* line 277, ../sass/main.scss */
+/* line 310, ../sass/main.scss */
 footer .copyright a {
   color: #efb600;
   text-decoration: none;
   letter-spacing: 1px;
   -moz-transition: border-bottom 0.1s ease 0.01s;
 }
-/* line 283, ../sass/main.scss */
+/* line 316, ../sass/main.scss */
 footer .copyright a:hover {
   color: #efb600;
   border-bottom: 1px dashed #efb600;
 }
 
 /* end footer */
-/* line 290, ../sass/main.scss */
+/* line 323, ../sass/main.scss */
 .clearfix {
   display: inline-table;
   /* Hides from IE-mac \*/
@@ -345,12 +375,12 @@ footer .copyright a:hover {
   /* End hide from IE-mac */
 }
 
-/* line 297, ../sass/main.scss */
+/* line 330, ../sass/main.scss */
 html > body .clearfix {
   height: auto;
 }
 
-/* line 300, ../sass/main.scss */
+/* line 333, ../sass/main.scss */
 .clearfix:after {
   content: ".";
   display: block;
