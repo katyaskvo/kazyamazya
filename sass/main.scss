@@ -174,27 +174,32 @@ nav {
 	border: 4px solid #DFE0D3;
 	@include box-shadow(1px 1px 5px #656565);
 	/*background-color: $green;*/
+	-webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
 	img {
 		@include border-radius(26px);
-		@include transition(filter, 0.2s, ease);
+	}
+	.caption {
+		background: $brown-dark;
 	}
 }
 .justified-gallery a:hover {
 	border-color: $green;
 	text-decoration: none;
+	@include box-shadow(1px 1px 10px #656565);
+	@include border-radius(9px);
+	-webkit-transform: scale(1.05,1.07);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.05,1.07);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
 	img {
-		-webkit-filter: blur(2px); 
-		-moz-filter: blur(2px);
-		-o-filter: blur(2px); 
-		-ms-filter: blur(2px); 
-		filter: blur(2px);  
-		filter: url(filter.svg#blur);
-		filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
-	}
-	.caption {
-		display: block;
-		opacity: 0.6 !important;
-
+		@include border-radius(3px);
 	}
 }
 

@@ -174,43 +174,53 @@ nav a, nav a:hover, nav a:active {
   -moz-box-shadow: 1px 1px 5px #656565;
   box-shadow: 1px 1px 5px #656565;
   /*background-color: $green;*/
+  -webkit-transform: scale(1, 1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 250ms;
+  -moz-transform: scale(1, 1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 250ms;
 }
-/* line 177, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 .justified-gallery a img {
   -webkit-border-radius: 26px;
   -moz-border-radius: 26px;
   -ms-border-radius: 26px;
   border-radius: 26px;
-  -webkit-transition: filter 0.2s ease;
-  -moz-transition: filter 0.2s ease;
-  -ms-transition: filter 0.2s ease;
-  -o-transition: filter 0.2s ease;
-  transition: filter 0.2s ease;
+}
+/* line 186, ../sass/main.scss */
+.justified-gallery a .caption {
+  background: #323232;
 }
 
-/* line 182, ../sass/main.scss */
+/* line 190, ../sass/main.scss */
 .justified-gallery a:hover {
   border-color: #057565;
   text-decoration: none;
+  -webkit-box-shadow: 1px 1px 10px #656565;
+  -moz-box-shadow: 1px 1px 10px #656565;
+  box-shadow: 1px 1px 10px #656565;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  border-radius: 9px;
+  -webkit-transform: scale(1.05, 1.07);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 250ms;
+  -moz-transform: scale(1.05, 1.07);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 250ms;
 }
-/* line 185, ../sass/main.scss */
+/* line 201, ../sass/main.scss */
 .justified-gallery a:hover img {
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
-  filter: url(filter.svg#blur);
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
-}
-/* line 194, ../sass/main.scss */
-.justified-gallery a:hover .caption {
-  display: block;
-  opacity: 0.6 !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
 }
 
 /* footer */
-/* line 203, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 footer {
   position: absolute !important;
   bottom: -430px;
@@ -218,7 +228,7 @@ footer {
   background: #323232;
   height: 440px;
 }
-/* line 210, ../sass/main.scss */
+/* line 215, ../sass/main.scss */
 footer .show_footer {
   position: absolute;
   top: -20px;
@@ -233,11 +243,11 @@ footer .show_footer {
   border-radius: 10px 10px 0 0;
   background: url(../web-images/footer-arrow.png) center center no-repeat #323232;
 }
-/* line 221, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 footer .show_footer:hover {
   border-bottom: none;
 }
-/* line 224, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 footer .content {
   position: relative;
   width: 80%;
@@ -247,7 +257,7 @@ footer .content {
   padding: 80px 0 0 0;
   color: #95968a;
 }
-/* line 233, ../sass/main.scss */
+/* line 238, ../sass/main.scss */
 footer .content .story {
   font-size: 1.2em;
   line-height: 1.8em;
@@ -256,39 +266,39 @@ footer .content .story {
   padding: 0 5%;
 }
 @media (max-width: 840px) {
-  /* line 233, ../sass/main.scss */
+  /* line 238, ../sass/main.scss */
   footer .content .story {
     width: 100%;
     padding: 30px 0;
     float: none;
   }
 }
-/* line 245, ../sass/main.scss */
+/* line 250, ../sass/main.scss */
 footer .content .logo {
   float: left;
   position: relative;
   width: 22%;
 }
 @media (max-width: 840px) {
-  /* line 245, ../sass/main.scss */
+  /* line 250, ../sass/main.scss */
   footer .content .logo {
     width: 50%;
     float: none;
   }
 }
-/* line 254, ../sass/main.scss */
+/* line 259, ../sass/main.scss */
 footer .content .logo img {
   width: 100%;
   max-width: 231px;
 }
-/* line 259, ../sass/main.scss */
+/* line 264, ../sass/main.scss */
 footer .content .links {
   float: right;
   width: 22%;
   font: 12px/16px "QuicksandBook", sans-serif;
 }
 @media (max-width: 840px) {
-  /* line 259, ../sass/main.scss */
+  /* line 264, ../sass/main.scss */
   footer .content .links {
     width: 100%;
     padding: 30px 0;
@@ -297,26 +307,26 @@ footer .content .links {
     line-height: 1.6em;
   }
 }
-/* line 270, ../sass/main.scss */
+/* line 275, ../sass/main.scss */
 footer .content .links h5 {
   font-size: 1.4em;
   letter-spacing: 0;
 }
 @media (max-width: 840px) {
-  /* line 270, ../sass/main.scss */
+  /* line 275, ../sass/main.scss */
   footer .content .links h5 {
     font-size: 1.2em;
     border-bottom: 2px dotted;
     margin-bottom: 20px;
   }
 }
-/* line 279, ../sass/main.scss */
+/* line 284, ../sass/main.scss */
 footer .content .links ul {
   list-style: none;
   padding-bottom: 6px;
 }
 @media (max-width: 840px) {
-  /* line 279, ../sass/main.scss */
+  /* line 284, ../sass/main.scss */
   footer .content .links ul {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -324,18 +334,18 @@ footer .content .links ul {
     margin-bottom: 30px;
   }
 }
-/* line 286, ../sass/main.scss */
+/* line 291, ../sass/main.scss */
 footer .content .links ul li {
   padding-bottom: 6px;
 }
 @media (max-width: 840px) {
-  /* line 286, ../sass/main.scss */
+  /* line 291, ../sass/main.scss */
   footer .content .links ul li {
     padding-bottom: 10px;
     display: table;
   }
 }
-/* line 297, ../sass/main.scss */
+/* line 302, ../sass/main.scss */
 footer .copyright {
   padding-top: 60px;
   padding-bottom: 3px;
@@ -346,27 +356,27 @@ footer .copyright {
   margin-left: 27%;
 }
 @media (max-width: 840px) {
-  /* line 297, ../sass/main.scss */
+  /* line 302, ../sass/main.scss */
   footer .copyright {
     margin-left: 0;
     text-align: center;
   }
 }
-/* line 310, ../sass/main.scss */
+/* line 315, ../sass/main.scss */
 footer .copyright a {
   color: #efb600;
   text-decoration: none;
   letter-spacing: 1px;
   -moz-transition: border-bottom 0.1s ease 0.01s;
 }
-/* line 316, ../sass/main.scss */
+/* line 321, ../sass/main.scss */
 footer .copyright a:hover {
   color: #efb600;
   border-bottom: 1px dashed #efb600;
 }
 
 /* end footer */
-/* line 323, ../sass/main.scss */
+/* line 328, ../sass/main.scss */
 .clearfix {
   display: inline-table;
   /* Hides from IE-mac \*/
@@ -375,12 +385,12 @@ footer .copyright a:hover {
   /* End hide from IE-mac */
 }
 
-/* line 330, ../sass/main.scss */
+/* line 335, ../sass/main.scss */
 html > body .clearfix {
   height: auto;
 }
 
-/* line 333, ../sass/main.scss */
+/* line 338, ../sass/main.scss */
 .clearfix:after {
   content: ".";
   display: block;
