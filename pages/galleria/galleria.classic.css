@@ -41,6 +41,8 @@ body, html {
 }
 .galleria-thumbnails .galleria-image img {
 	opacity: 1 !important;
+	position: relative;
+	z-index: 2;
 }
 .galleria-thumbnails .galleria-image {
     height: 100px;
@@ -56,6 +58,9 @@ body, html {
 	-webkit-box-shadow: 1px 1px 3px #656565;
 	box-shadow: 1px 1px 5px #656565;
 	-moz-transition: border-color 0.4s ease 0s;
+	overflow: hidden !important;
+	position: relative;
+	z-index: 1;
 }
 .galleria-thumbnails .galleria-image:hover, .galleria-thumbnails .galleria-image.active {
 	border-color: #057565;

@@ -62,7 +62,7 @@ Galleria.addTheme({
 
             if (! touch ) {
                 // fade thumbnails
-                $(e.thumbTarget).css('opacity', 0.6).parent().hover(function() {
+                $(e.thumbTarget).css('opacity', 1).parent().hover(function() {
                     $(this).not('.active').children().stop().fadeTo(100, 1);
                 }, function() {
                     $(this).not('.active').children().stop().fadeTo(400, 0.6);
