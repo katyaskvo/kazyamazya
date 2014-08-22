@@ -1,3 +1,5 @@
+@import "media-queries"; 
+@import "compass/css3";
 $font-base: 'QuicksandBook', sans-serif;
 
 $brown-dark: #323232;
@@ -227,16 +229,20 @@ nav {
 	img {
 		float: left;
 		margin-right: 30px;
+		width: 480px;
+	}
+	p.story {
+		@include column-count(2);
 	}
 }
 
 /* footer */
 footer {
 	position: absolute !important;
-	bottom: -430px;
+	bottom: -410px;
 	width: 100%;
 	background: $brown-dark;
-	height: 440px;
+	height: 420px;
 
 	.show_footer {
 		position: absolute;
@@ -301,6 +307,7 @@ footer {
 			h5 {
 				font-size: 1.4em;
 				letter-spacing: 0;
+				padding-bottom: 8px;
 				@media (max-width: 840px) {
 					font-size: 1.2em;
 					border-bottom: 2px dotted;
@@ -309,13 +316,13 @@ footer {
 			}
 			ul {
 				list-style:none;
-				padding-bottom:6px;
+				padding-bottom:12px;
 				@media (max-width: 840px) {
 					@include column-count(2);
 					margin-bottom: 30px;
 				}
 				 li {
-					padding-bottom:6px;
+					padding-bottom:10px;
 					@media (max-width: 840px) {
 					padding-bottom: 10px;
 					display: table;
@@ -367,4 +374,14 @@ html>body .clearfix {
 	height: 0;
 	clear: both;
 	visibility: hidden;
+}
+
+
+
+// iphone5
+
+@media screen and (min-width: 480px) {
+	.galleria-thumbnails-container: {
+		display: none;
+	}
 }
