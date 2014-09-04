@@ -91,6 +91,14 @@ header {
 		box-shadow: 1px 1px 2px $brown-dark;
 		z-index: 100000;
 		float: left;
+		a {
+			width: 126px;
+			height: 82px;
+			display: block;
+			&:hover {
+				border-bottom: none;
+			}
+		}
 		@media (max-width: 720px) {
 			@include border-radius(0);
 			background: url(../kmf/logo_sm@2x.png) 0 2px $brown-dark no-repeat;
@@ -99,6 +107,10 @@ header {
 			height: 30px;
 			margin-left: 10px;
 			box-shadow: none;
+			a {
+				width: 44px;
+				height: 30px;
+			}
 		}
 	}
 	#logo {
@@ -300,7 +312,6 @@ body .galleria-container.fullscreen {
 		p.story {
 			@include column-count(2);
 			@include column-gap(40px);
-			padding-bottom: 30px;
 		}
 	}
 	@media (max-width: 1199px) and (min-width: 960px) {
